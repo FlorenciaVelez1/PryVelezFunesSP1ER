@@ -102,6 +102,7 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblIdentificacion);
             this.Name = "frmVendedores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vendedores";
             this.ResumeLayout(false);
             this.PerformLayout();

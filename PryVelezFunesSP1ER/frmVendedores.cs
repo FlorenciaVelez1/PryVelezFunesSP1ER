@@ -27,16 +27,6 @@ namespace PryVelezFunesSP1ER
         private void cmdRegistroVendedores_Click(object sender, EventArgs e)
         {
             bool VerificacionCodigo = false;
-            StreamReader IDVendedores = new StreamReader("./Vendedores.txt");
-            while (!IDVendedores.EndOfStream)
-            {
-                if(mskIdentificacionVendedores.Text == IDVendedores.ReadLine())
-                {
-                    MessageBox.Show("El identificador de cliente se repite, revise nuevamente");
-                    VerificacionCodigo = true;
-                }
-            }
-            IDVendedores.Close();
             if(VerificacionCodigo == false)
             {
                 StreamWriter Vendedores = new StreamWriter("./Vendedores.txt", true);
