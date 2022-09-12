@@ -18,12 +18,10 @@ namespace PryVelezFunesSP1ER
         {
             InitializeComponent();
         }
-
         private void cmdSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void cmdRegistroVendedores_Click(object sender, EventArgs e)
         {
             bool VerificacionCodigo = false;
@@ -35,6 +33,28 @@ namespace PryVelezFunesSP1ER
                 Vendedores.Close();
                 mskIdentificacionVendedores.Text = "";
                 txtNombreVendedores.Text = "";
+            }
+        }
+        private void mskIdentificacionVendedores_TextChanged(object sender, EventArgs e)
+        {
+            if (mskIdentificacionVendedores.Text != "" & txtNombreVendedores.Text != "")
+            {
+                cmdRegistroVendedores.Enabled = true;
+            }
+            else
+            {
+                cmdRegistroVendedores.Enabled = false;
+            }
+        }
+        private void txtNombreVendedores_TextChanged(object sender, EventArgs e)
+        {
+            if (mskIdentificacionVendedores.Text != "" & txtNombreVendedores.Text != "")
+            {
+                cmdRegistroVendedores.Enabled = true;
+            }
+            else
+            {
+                cmdRegistroVendedores.Enabled = false;
             }
         }
     }

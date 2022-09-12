@@ -23,10 +23,33 @@ namespace PryVelezFunesSP1ER
         {
             this.Close();
         }
-
         private void cmdRegistroClientes_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mskIdentificacionClientes_TextChanged(object sender, EventArgs e)
+        {
+            if(mskIdentificacionClientes.Text != "" & txtNombreClientes.Text != "")
+            {
+                cmdRegistroClientes.Enabled = true;
+            }
+            else
+            {
+                cmdRegistroClientes.Enabled = false;    
+            }
+        }
+
+        private void txtNombreClientes_TextChanged(object sender, EventArgs e)
+        {
+            if (mskIdentificacionClientes.Text != "" & txtNombreClientes.Text != "")
+            {
+                cmdRegistroClientes.Enabled = true;
+            }
+            else
+            {
+                cmdRegistroClientes.Enabled = false;
+            }
         }
     }
 }
