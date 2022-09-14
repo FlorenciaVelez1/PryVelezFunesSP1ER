@@ -24,28 +24,31 @@ namespace PryVelezFunesSP1ER
         }
         private void cmdRegistroVendedores_Click(object sender, EventArgs e)
         {
-            StreamReader ControlVendedores = new StreamReader("./Vendedores.txt");
             bool bandera = false;
-            while (!ControlVendedores.EndOfStream)
+            if (File.Exists("./Vendedores.txt"))
             {
-                string auxVendedores = ControlVendedores.ReadLine();
-                string[] vecVendedores = auxVendedores.Split(',');
-                if (vecVendedores[0] == auxVendedores)
+                StreamReader srControlVendedores = new StreamReader("./Vendedores.txt");
+                while (!srControlVendedores.EndOfStream)
                 {
-                    MessageBox.Show("Numero del cliente repetido");
-                    mskIdentificacionVendedores.Text = "";
-                    bandera = true;
+                    string auxClientes = srControlVendedores.ReadLine();
+                    string[] Clientes = auxClientes.Split(',');
+                    if (mskIdentificacionVendedores.Text == Clientes[0])
+                    {
+                        MessageBox.Show("El ID del vendedor se ha repetido, intentelo nuevamente");
+                        mskIdentificacionVendedores.Text = "";
+                        bandera = true;
+                    }
                 }
+                srControlVendedores.Close();
             }
-            ControlVendedores.Close();
             if (bandera == false)
             {
-                StreamWriter CargaVentas = new StreamWriter("./Vendedores.txt", true);
-                CargaVentas.WriteLine(mskIdentificacionVendedores.Text + "," + txtNombreVendedores.Text);//mskActivo.Text + "," + mskComision.Text + "," + );
-                MessageBox.Show("Venta cargada correctamente");
-                CargaVentas.Close();
-               // mskActivo.Text = "";
-               // mskComision.Text = "";
+                StreamWriter swCargaVentas = new StreamWriter("./Vendedores.txt", true);
+                swCargaVentas.WriteLine(mskIdentificacionVendedores.Text + "," + txtNombreVendedores.Text + "," + nudActivo.Text + "," + nudComision.Text);
+                MessageBox.Show("Datos del vendedor cargado correctamente");
+                swCargaVentas.Close();
+                nudComision.Value = 0;
+                nudActivo.Value = 0;
                 mskIdentificacionVendedores.Text = "";
                 txtNombreVendedores.Text = "";
             }
@@ -71,6 +74,11 @@ namespace PryVelezFunesSP1ER
             {
                 cmdRegistroVendedores.Enabled = false;
             }
+        }
+        private void nudComision_ValueChanged(object sender, EventArgs e)
+        {
+            nudComision.Maximum = 0;
+            nudComision.Minimum = -1;
         }
     }
 }

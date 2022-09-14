@@ -24,28 +24,33 @@ namespace PryVelezFunesSP1ER
         }
         private void cmdRegistroClientes_Click(object sender, EventArgs e)
         {
-            StreamReader ControlClientes = new StreamReader("./Clientes.txt");
             bool bandera = false;
-            while (!ControlClientes.EndOfStream)
+            if (File.Exists("./Clientes.txt"))
             {
-                string auxClientes = ControlClientes.ReadLine();
-                string[] Clientes = auxClientes.Split(',');
-                if (mskIdentificacionClientes.Text == Clientes[0])
+                StreamReader srControlClientes = new StreamReader("./Clientes.txt");
+                
+                while (!srControlClientes.EndOfStream)
                 {
-                    MessageBox.Show("Numero del cliente se ha repetido, intentelo nuevamente");
-                    mskIdentificacionClientes.Text = "";
-                    bandera = true;
+                    string auxClientes = srControlClientes.ReadLine();
+                    string[] Clientes = auxClientes.Split(',');
+                    if (mskIdentificacionClientes.Text == Clientes[0])
+                    {
+                        MessageBox.Show("El número del cliente se ha repetido, intentelo nuevamente");
+                        mskIdentificacionClientes.Text = "";
+                        bandera = true;
+                    }
                 }
+                srControlClientes.Close();
             }
-            ControlClientes.Close();
             if (bandera == false)
             {
-                StreamWriter srCargaClientes = new StreamWriter("./Clientes.txt", true);
-                srCargaClientes.WriteLine(mskIdentificacionClientes.Text + "," + txtNombreClientes.Text);
+                StreamWriter swCargaClientes = new StreamWriter("./Clientes.txt", true);
+                swCargaClientes.WriteLine(mskIdentificacionClientes.Text + "," + txtNombreClientes.Text);
                 MessageBox.Show("Cliente cargado correctamente");
-                srCargaClientes.Close();
+                swCargaClientes.Close();
                 txtNombreClientes.Text = "";
                 mskIdentificacionClientes.Text = "";
+                mskIdentificacionClientes.Focus();
             }
         }
         private void mskIdentificacionClientes_TextChanged(object sender, EventArgs e)
