@@ -34,12 +34,18 @@
             this.mskIdentificacionVendedores = new System.Windows.Forms.MaskedTextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblIdentificacion = new System.Windows.Forms.Label();
+            this.lblComision = new System.Windows.Forms.Label();
+            this.lblActivo = new System.Windows.Forms.Label();
+            this.nudActivo = new System.Windows.Forms.NumericUpDown();
+            this.nudComision = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nudActivo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudComision)).BeginInit();
             this.SuspendLayout();
             // 
             // cmdSalir
             // 
-            this.cmdSalir.Location = new System.Drawing.Point(21, 82);
-            this.cmdSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdSalir.Location = new System.Drawing.Point(20, 168);
+            this.cmdSalir.Margin = new System.Windows.Forms.Padding(4);
             this.cmdSalir.Name = "cmdSalir";
             this.cmdSalir.Size = new System.Drawing.Size(100, 28);
             this.cmdSalir.TabIndex = 17;
@@ -49,8 +55,8 @@
             // 
             // cmdRegistroVendedores
             // 
-            this.cmdRegistroVendedores.Location = new System.Drawing.Point(157, 82);
-            this.cmdRegistroVendedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdRegistroVendedores.Location = new System.Drawing.Point(156, 168);
+            this.cmdRegistroVendedores.Margin = new System.Windows.Forms.Padding(4);
             this.cmdRegistroVendedores.Name = "cmdRegistroVendedores";
             this.cmdRegistroVendedores.Size = new System.Drawing.Size(100, 28);
             this.cmdRegistroVendedores.TabIndex = 16;
@@ -61,7 +67,7 @@
             // txtNombreVendedores
             // 
             this.txtNombreVendedores.Location = new System.Drawing.Point(124, 50);
-            this.txtNombreVendedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreVendedores.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreVendedores.Name = "txtNombreVendedores";
             this.txtNombreVendedores.Size = new System.Drawing.Size(132, 22);
             this.txtNombreVendedores.TabIndex = 15;
@@ -70,7 +76,7 @@
             // mskIdentificacionVendedores
             // 
             this.mskIdentificacionVendedores.Location = new System.Drawing.Point(124, 15);
-            this.mskIdentificacionVendedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskIdentificacionVendedores.Margin = new System.Windows.Forms.Padding(4);
             this.mskIdentificacionVendedores.Mask = "99999";
             this.mskIdentificacionVendedores.Name = "mskIdentificacionVendedores";
             this.mskIdentificacionVendedores.Size = new System.Drawing.Size(132, 22);
@@ -81,7 +87,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(17, 55);
+            this.lblNombre.Location = new System.Drawing.Point(17, 56);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(59, 16);
@@ -98,21 +104,59 @@
             this.lblIdentificacion.TabIndex = 12;
             this.lblIdentificacion.Text = "Identificación:";
             // 
+            // lblComision
+            // 
+            this.lblComision.AutoSize = true;
+            this.lblComision.Location = new System.Drawing.Point(17, 128);
+            this.lblComision.Name = "lblComision";
+            this.lblComision.Size = new System.Drawing.Size(63, 16);
+            this.lblComision.TabIndex = 18;
+            this.lblComision.Text = "Comisión";
+            // 
+            // lblActivo
+            // 
+            this.lblActivo.AutoSize = true;
+            this.lblActivo.Location = new System.Drawing.Point(17, 92);
+            this.lblActivo.Name = "lblActivo";
+            this.lblActivo.Size = new System.Drawing.Size(44, 16);
+            this.lblActivo.TabIndex = 19;
+            this.lblActivo.Text = "Activo";
+            // 
+            // nudActivo
+            // 
+            this.nudActivo.Location = new System.Drawing.Point(124, 90);
+            this.nudActivo.Name = "nudActivo";
+            this.nudActivo.Size = new System.Drawing.Size(40, 22);
+            this.nudActivo.TabIndex = 20;
+            // 
+            // nudComision
+            // 
+            this.nudComision.Location = new System.Drawing.Point(124, 122);
+            this.nudComision.Name = "nudComision";
+            this.nudComision.Size = new System.Drawing.Size(40, 22);
+            this.nudComision.TabIndex = 21;
+            // 
             // frmVendedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 122);
+            this.ClientSize = new System.Drawing.Size(277, 210);
+            this.Controls.Add(this.nudComision);
+            this.Controls.Add(this.nudActivo);
+            this.Controls.Add(this.lblActivo);
+            this.Controls.Add(this.lblComision);
             this.Controls.Add(this.cmdSalir);
             this.Controls.Add(this.cmdRegistroVendedores);
             this.Controls.Add(this.txtNombreVendedores);
             this.Controls.Add(this.mskIdentificacionVendedores);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblIdentificacion);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVendedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vendedores";
+            ((System.ComponentModel.ISupportInitialize)(this.nudActivo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudComision)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +170,9 @@
         private System.Windows.Forms.MaskedTextBox mskIdentificacionVendedores;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblIdentificacion;
+        private System.Windows.Forms.Label lblComision;
+        private System.Windows.Forms.Label lblActivo;
+        private System.Windows.Forms.NumericUpDown nudActivo;
+        private System.Windows.Forms.NumericUpDown nudComision;
     }
 }

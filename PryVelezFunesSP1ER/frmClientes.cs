@@ -18,16 +18,36 @@ namespace PryVelezFunesSP1ER
         {
             InitializeComponent();
         }
-
         private void cmdSalirVendedores_Click(object sender, EventArgs e)
         {
             this.Close();
         }
         private void cmdRegistroClientes_Click(object sender, EventArgs e)
         {
-
+            StreamReader ControlClientes = new StreamReader("./Clientes.txt");
+            bool bandera = false;
+            while (!ControlClientes.EndOfStream)
+            {
+                string auxClientes = ControlClientes.ReadLine();
+                string[] Clientes = auxClientes.Split(',');
+                if (mskIdentificacionClientes.Text == Clientes[0])
+                {
+                    MessageBox.Show("Numero del cliente se ha repetido, intentelo nuevamente");
+                    mskIdentificacionClientes.Text = "";
+                    bandera = true;
+                }
+            }
+            ControlClientes.Close();
+            if (bandera == false)
+            {
+                StreamWriter srCargaClientes = new StreamWriter("./Clientes.txt", true);
+                srCargaClientes.WriteLine(mskIdentificacionClientes.Text + "," + txtNombreClientes.Text);
+                MessageBox.Show("Cliente cargado correctamente");
+                srCargaClientes.Close();
+                txtNombreClientes.Text = "";
+                mskIdentificacionClientes.Text = "";
+            }
         }
-
         private void mskIdentificacionClientes_TextChanged(object sender, EventArgs e)
         {
             if(mskIdentificacionClientes.Text != "" & txtNombreClientes.Text != "")
@@ -39,7 +59,6 @@ namespace PryVelezFunesSP1ER
                 cmdRegistroClientes.Enabled = false;    
             }
         }
-
         private void txtNombreClientes_TextChanged(object sender, EventArgs e)
         {
             if (mskIdentificacionClientes.Text != "" & txtNombreClientes.Text != "")

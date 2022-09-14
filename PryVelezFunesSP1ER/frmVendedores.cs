@@ -24,13 +24,28 @@ namespace PryVelezFunesSP1ER
         }
         private void cmdRegistroVendedores_Click(object sender, EventArgs e)
         {
-            bool VerificacionCodigo = false;
-            if(VerificacionCodigo == false)
+            StreamReader ControlVendedores = new StreamReader("./Vendedores.txt");
+            bool bandera = false;
+            while (!ControlVendedores.EndOfStream)
             {
-                StreamWriter Vendedores = new StreamWriter("./Vendedores.txt", true);
-                Vendedores.WriteLine(mskIdentificacionVendedores.Text + ";" + txtNombreVendedores.Text);
-                MessageBox.Show("Datos guardados correctamente");
-                Vendedores.Close();
+                string auxVendedores = ControlVendedores.ReadLine();
+                string[] vecVendedores = auxVendedores.Split(',');
+                if (vecVendedores[0] == auxVendedores)
+                {
+                    MessageBox.Show("Numero del cliente repetido");
+                    mskIdentificacionVendedores.Text = "";
+                    bandera = true;
+                }
+            }
+            ControlVendedores.Close();
+            if (bandera == false)
+            {
+                StreamWriter CargaVentas = new StreamWriter("./Vendedores.txt", true);
+                CargaVentas.WriteLine(mskIdentificacionVendedores.Text + "," + txtNombreVendedores.Text);//mskActivo.Text + "," + mskComision.Text + "," + );
+                MessageBox.Show("Venta cargada correctamente");
+                CargaVentas.Close();
+               // mskActivo.Text = "";
+               // mskComision.Text = "";
                 mskIdentificacionVendedores.Text = "";
                 txtNombreVendedores.Text = "";
             }
