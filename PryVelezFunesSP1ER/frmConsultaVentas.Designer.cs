@@ -30,47 +30,55 @@
         {
             this.cmdLimpiar = new System.Windows.Forms.Button();
             this.cmdListar = new System.Windows.Forms.Button();
-            this.grillaVendedores = new System.Windows.Forms.DataGridView();
+            this.grillaVentas = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.grillaVendedores)).BeginInit();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaVentas)).BeginInit();
             this.SuspendLayout();
             // 
             // cmdLimpiar
             // 
-            this.cmdLimpiar.Location = new System.Drawing.Point(11, 144);
+            this.cmdLimpiar.Location = new System.Drawing.Point(15, 177);
+            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdLimpiar.Name = "cmdLimpiar";
-            this.cmdLimpiar.Size = new System.Drawing.Size(75, 23);
-            this.cmdLimpiar.TabIndex = 8;
+            this.cmdLimpiar.Size = new System.Drawing.Size(100, 28);
+            this.cmdLimpiar.TabIndex = 2;
             this.cmdLimpiar.Text = "Limpiar";
             this.cmdLimpiar.UseVisualStyleBackColor = true;
+            this.cmdLimpiar.Click += new System.EventHandler(this.cmdLimpiar_Click);
             // 
             // cmdListar
             // 
-            this.cmdListar.Location = new System.Drawing.Point(252, 144);
+            this.cmdListar.Location = new System.Drawing.Point(336, 177);
+            this.cmdListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(75, 23);
-            this.cmdListar.TabIndex = 7;
+            this.cmdListar.Size = new System.Drawing.Size(100, 28);
+            this.cmdListar.TabIndex = 1;
             this.cmdListar.Text = "Listar";
             this.cmdListar.UseVisualStyleBackColor = true;
+            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
             // 
-            // grillaVendedores
+            // grillaVentas
             // 
-            this.grillaVendedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grillaVendedores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grillaVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grillaVentas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4});
-            this.grillaVendedores.Location = new System.Drawing.Point(11, 11);
-            this.grillaVendedores.Margin = new System.Windows.Forms.Padding(2);
-            this.grillaVendedores.Name = "grillaVendedores";
-            this.grillaVendedores.RowHeadersWidth = 51;
-            this.grillaVendedores.RowTemplate.Height = 24;
-            this.grillaVendedores.Size = new System.Drawing.Size(316, 122);
-            this.grillaVendedores.TabIndex = 6;
+            this.Column4,
+            this.Column5,
+            this.Column6});
+            this.grillaVentas.Location = new System.Drawing.Point(15, 14);
+            this.grillaVentas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grillaVentas.Name = "grillaVentas";
+            this.grillaVentas.RowHeadersWidth = 51;
+            this.grillaVentas.RowTemplate.Height = 24;
+            this.grillaVentas.Size = new System.Drawing.Size(421, 150);
+            this.grillaVentas.TabIndex = 6;
             // 
             // Column1
             // 
@@ -81,33 +89,52 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Numero Factura";
+            this.Column2.HeaderText = "Número Factura";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.Width = 125;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Activo";
+            this.Column3.HeaderText = "Fecha";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Comisión";
+            this.Column4.HeaderText = "ID Cliente";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "ID Vendedor";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Monto";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
             // 
             // frmConsultaVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 184);
+            this.ClientSize = new System.Drawing.Size(456, 226);
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.cmdListar);
-            this.Controls.Add(this.grillaVendedores);
+            this.Controls.Add(this.grillaVentas);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmConsultaVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Ventas";
-            ((System.ComponentModel.ISupportInitialize)(this.grillaVendedores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaVentas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -116,10 +143,12 @@
 
         private System.Windows.Forms.Button cmdLimpiar;
         private System.Windows.Forms.Button cmdListar;
-        private System.Windows.Forms.DataGridView grillaVendedores;
+        private System.Windows.Forms.DataGridView grillaVentas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

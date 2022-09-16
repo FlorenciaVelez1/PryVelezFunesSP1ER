@@ -39,10 +39,10 @@
             // cmdSalir
             // 
             this.cmdSalir.Location = new System.Drawing.Point(27, 82);
-            this.cmdSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdSalir.Margin = new System.Windows.Forms.Padding(4);
             this.cmdSalir.Name = "cmdSalir";
             this.cmdSalir.Size = new System.Drawing.Size(100, 28);
-            this.cmdSalir.TabIndex = 17;
+            this.cmdSalir.TabIndex = 4;
             this.cmdSalir.Text = "Salir";
             this.cmdSalir.UseVisualStyleBackColor = true;
             this.cmdSalir.Click += new System.EventHandler(this.cmdSalirVendedores_Click);
@@ -50,10 +50,10 @@
             // cmdRegistroClientes
             // 
             this.cmdRegistroClientes.Location = new System.Drawing.Point(163, 82);
-            this.cmdRegistroClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdRegistroClientes.Margin = new System.Windows.Forms.Padding(4);
             this.cmdRegistroClientes.Name = "cmdRegistroClientes";
             this.cmdRegistroClientes.Size = new System.Drawing.Size(100, 28);
-            this.cmdRegistroClientes.TabIndex = 16;
+            this.cmdRegistroClientes.TabIndex = 3;
             this.cmdRegistroClientes.Text = "Registrar";
             this.cmdRegistroClientes.UseVisualStyleBackColor = true;
             this.cmdRegistroClientes.Click += new System.EventHandler(this.cmdRegistroClientes_Click);
@@ -61,20 +61,20 @@
             // txtNombreClientes
             // 
             this.txtNombreClientes.Location = new System.Drawing.Point(129, 50);
-            this.txtNombreClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreClientes.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreClientes.Name = "txtNombreClientes";
             this.txtNombreClientes.Size = new System.Drawing.Size(132, 22);
-            this.txtNombreClientes.TabIndex = 15;
+            this.txtNombreClientes.TabIndex = 2;
             this.txtNombreClientes.TextChanged += new System.EventHandler(this.txtNombreClientes_TextChanged);
             // 
             // mskIdentificacionClientes
             // 
             this.mskIdentificacionClientes.Location = new System.Drawing.Point(129, 15);
-            this.mskIdentificacionClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskIdentificacionClientes.Margin = new System.Windows.Forms.Padding(4);
             this.mskIdentificacionClientes.Mask = "99999";
             this.mskIdentificacionClientes.Name = "mskIdentificacionClientes";
             this.mskIdentificacionClientes.Size = new System.Drawing.Size(132, 22);
-            this.mskIdentificacionClientes.TabIndex = 14;
+            this.mskIdentificacionClientes.TabIndex = 1;
             this.mskIdentificacionClientes.ValidatingType = typeof(int);
             this.mskIdentificacionClientes.TextChanged += new System.EventHandler(this.mskIdentificacionClientes_TextChanged);
             // 
@@ -109,7 +109,7 @@
             this.Controls.Add(this.mskIdentificacionClientes);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblIdentificacion);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";

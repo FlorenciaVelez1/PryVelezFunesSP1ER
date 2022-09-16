@@ -41,5 +41,10 @@ namespace PryVelezFunesSP1ER
             frmConsultaVendedores ConsultaVendedores = new frmConsultaVendedores();
             ConsultaVendedores.ShowDialog();
         }
+        private void tpsmConsultaVentas_Click(object sender, EventArgs e)
+        {
+            frmConsultaVentas ConsultaVentas = new frmConsultaVentas();
+            ConsultaVentas.ShowDialog();
+        }
     }
 }

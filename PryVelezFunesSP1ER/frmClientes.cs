@@ -37,6 +37,7 @@ namespace PryVelezFunesSP1ER
                     {
                         MessageBox.Show("El número del cliente se ha repetido, intentelo nuevamente");
                         mskIdentificacionClientes.Text = "";
+                        mskIdentificacionClientes.Focus();
                         bandera = true;
                     }
                 }

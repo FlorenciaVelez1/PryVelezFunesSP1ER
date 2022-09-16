@@ -44,102 +44,106 @@
             // 
             // cmdSalir
             // 
-            this.cmdSalir.Location = new System.Drawing.Point(15, 136);
+            this.cmdSalir.Location = new System.Drawing.Point(20, 167);
+            this.cmdSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdSalir.Name = "cmdSalir";
-            this.cmdSalir.Size = new System.Drawing.Size(75, 23);
-            this.cmdSalir.TabIndex = 17;
+            this.cmdSalir.Size = new System.Drawing.Size(100, 28);
+            this.cmdSalir.TabIndex = 6;
             this.cmdSalir.Text = "Salir";
             this.cmdSalir.UseVisualStyleBackColor = true;
             this.cmdSalir.Click += new System.EventHandler(this.cmdSalir_Click);
             // 
             // cmdRegistroVendedores
             // 
-            this.cmdRegistroVendedores.Location = new System.Drawing.Point(117, 136);
+            this.cmdRegistroVendedores.Location = new System.Drawing.Point(156, 167);
+            this.cmdRegistroVendedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdRegistroVendedores.Name = "cmdRegistroVendedores";
-            this.cmdRegistroVendedores.Size = new System.Drawing.Size(75, 23);
-            this.cmdRegistroVendedores.TabIndex = 16;
+            this.cmdRegistroVendedores.Size = new System.Drawing.Size(100, 28);
+            this.cmdRegistroVendedores.TabIndex = 5;
             this.cmdRegistroVendedores.Text = "Registrar";
             this.cmdRegistroVendedores.UseVisualStyleBackColor = true;
             this.cmdRegistroVendedores.Click += new System.EventHandler(this.cmdRegistroVendedores_Click);
             // 
             // txtNombreVendedores
             // 
-            this.txtNombreVendedores.Location = new System.Drawing.Point(93, 41);
+            this.txtNombreVendedores.Location = new System.Drawing.Point(124, 50);
+            this.txtNombreVendedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreVendedores.Name = "txtNombreVendedores";
-            this.txtNombreVendedores.Size = new System.Drawing.Size(100, 20);
-            this.txtNombreVendedores.TabIndex = 15;
+            this.txtNombreVendedores.Size = new System.Drawing.Size(132, 22);
+            this.txtNombreVendedores.TabIndex = 2;
             this.txtNombreVendedores.TextChanged += new System.EventHandler(this.txtNombreVendedores_TextChanged);
             // 
             // mskIdentificacionVendedores
             // 
-            this.mskIdentificacionVendedores.Location = new System.Drawing.Point(93, 12);
+            this.mskIdentificacionVendedores.Location = new System.Drawing.Point(124, 15);
+            this.mskIdentificacionVendedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mskIdentificacionVendedores.Mask = "99999";
             this.mskIdentificacionVendedores.Name = "mskIdentificacionVendedores";
-            this.mskIdentificacionVendedores.Size = new System.Drawing.Size(100, 20);
-            this.mskIdentificacionVendedores.TabIndex = 14;
+            this.mskIdentificacionVendedores.Size = new System.Drawing.Size(132, 22);
+            this.mskIdentificacionVendedores.TabIndex = 1;
             this.mskIdentificacionVendedores.ValidatingType = typeof(int);
             this.mskIdentificacionVendedores.TextChanged += new System.EventHandler(this.mskIdentificacionVendedores_TextChanged);
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(13, 46);
+            this.lblNombre.Location = new System.Drawing.Point(17, 57);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.Size = new System.Drawing.Size(59, 16);
             this.lblNombre.TabIndex = 13;
             this.lblNombre.Text = "Nombre:";
             // 
             // lblIdentificacion
             // 
             this.lblIdentificacion.AutoSize = true;
-            this.lblIdentificacion.Location = new System.Drawing.Point(13, 16);
+            this.lblIdentificacion.Location = new System.Drawing.Point(17, 20);
+            this.lblIdentificacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIdentificacion.Name = "lblIdentificacion";
-            this.lblIdentificacion.Size = new System.Drawing.Size(73, 13);
+            this.lblIdentificacion.Size = new System.Drawing.Size(88, 16);
             this.lblIdentificacion.TabIndex = 12;
             this.lblIdentificacion.Text = "Identificación:";
             // 
             // lblComision
             // 
             this.lblComision.AutoSize = true;
-            this.lblComision.Location = new System.Drawing.Point(13, 104);
-            this.lblComision.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblComision.Location = new System.Drawing.Point(17, 128);
             this.lblComision.Name = "lblComision";
-            this.lblComision.Size = new System.Drawing.Size(49, 13);
+            this.lblComision.Size = new System.Drawing.Size(63, 16);
             this.lblComision.TabIndex = 18;
             this.lblComision.Text = "Comisión";
             // 
             // lblActivo
             // 
             this.lblActivo.AutoSize = true;
-            this.lblActivo.Location = new System.Drawing.Point(13, 75);
-            this.lblActivo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblActivo.Location = new System.Drawing.Point(17, 92);
             this.lblActivo.Name = "lblActivo";
-            this.lblActivo.Size = new System.Drawing.Size(37, 13);
+            this.lblActivo.Size = new System.Drawing.Size(44, 16);
             this.lblActivo.TabIndex = 19;
             this.lblActivo.Text = "Activo";
             // 
             // nudActivo
             // 
-            this.nudActivo.Location = new System.Drawing.Point(93, 73);
-            this.nudActivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudActivo.Location = new System.Drawing.Point(124, 90);
+            this.nudActivo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudActivo.Name = "nudActivo";
-            this.nudActivo.Size = new System.Drawing.Size(30, 20);
-            this.nudActivo.TabIndex = 20;
+            this.nudActivo.Size = new System.Drawing.Size(40, 22);
+            this.nudActivo.TabIndex = 3;
             // 
             // nudComision
             // 
-            this.nudComision.Location = new System.Drawing.Point(93, 99);
-            this.nudComision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nudComision.Location = new System.Drawing.Point(124, 122);
+            this.nudComision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudComision.Name = "nudComision";
-            this.nudComision.Size = new System.Drawing.Size(30, 20);
-            this.nudComision.TabIndex = 21;
+            this.nudComision.Size = new System.Drawing.Size(40, 22);
+            this.nudComision.TabIndex = 4;
             this.nudComision.ValueChanged += new System.EventHandler(this.nudComision_ValueChanged);
             // 
             // frmVendedores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(208, 171);
+            this.ClientSize = new System.Drawing.Size(277, 210);
             this.Controls.Add(this.nudComision);
             this.Controls.Add(this.nudActivo);
             this.Controls.Add(this.lblActivo);
@@ -150,6 +154,7 @@
             this.Controls.Add(this.mskIdentificacionVendedores);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblIdentificacion);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmVendedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vendedores";

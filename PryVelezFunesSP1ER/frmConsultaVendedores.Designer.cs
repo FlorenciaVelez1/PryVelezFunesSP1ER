@@ -40,20 +40,22 @@
             // 
             // cmdLimpiar
             // 
-            this.cmdLimpiar.Location = new System.Drawing.Point(11, 144);
+            this.cmdLimpiar.Location = new System.Drawing.Point(15, 177);
+            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdLimpiar.Name = "cmdLimpiar";
-            this.cmdLimpiar.Size = new System.Drawing.Size(75, 23);
-            this.cmdLimpiar.TabIndex = 5;
+            this.cmdLimpiar.Size = new System.Drawing.Size(100, 28);
+            this.cmdLimpiar.TabIndex = 2;
             this.cmdLimpiar.Text = "Limpiar";
             this.cmdLimpiar.UseVisualStyleBackColor = true;
             this.cmdLimpiar.Click += new System.EventHandler(this.cmdLimpiar_Click);
             // 
             // cmdListar
             // 
-            this.cmdListar.Location = new System.Drawing.Point(252, 144);
+            this.cmdListar.Location = new System.Drawing.Point(336, 177);
+            this.cmdListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(75, 23);
-            this.cmdListar.TabIndex = 4;
+            this.cmdListar.Size = new System.Drawing.Size(100, 28);
+            this.cmdListar.TabIndex = 1;
             this.cmdListar.Text = "Listar";
             this.cmdListar.UseVisualStyleBackColor = true;
             this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
@@ -66,12 +68,12 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.grillaVendedores.Location = new System.Drawing.Point(11, 11);
-            this.grillaVendedores.Margin = new System.Windows.Forms.Padding(2);
+            this.grillaVendedores.Location = new System.Drawing.Point(15, 14);
+            this.grillaVendedores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grillaVendedores.Name = "grillaVendedores";
             this.grillaVendedores.RowHeadersWidth = 51;
             this.grillaVendedores.RowTemplate.Height = 24;
-            this.grillaVendedores.Size = new System.Drawing.Size(316, 122);
+            this.grillaVendedores.Size = new System.Drawing.Size(421, 150);
             this.grillaVendedores.TabIndex = 3;
             // 
             // Column1
@@ -91,21 +93,26 @@
             // Column3
             // 
             this.Column3.HeaderText = "Activo";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Comisión";
+            this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
             // 
             // frmConsultaVendedores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 176);
+            this.ClientSize = new System.Drawing.Size(457, 217);
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.grillaVendedores);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmConsultaVendedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Vendedores";

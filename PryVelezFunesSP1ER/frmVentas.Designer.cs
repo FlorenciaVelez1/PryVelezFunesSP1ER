@@ -46,9 +46,10 @@
             // 
             // cmdSalirVentas
             // 
-            this.cmdSalirVentas.Location = new System.Drawing.Point(16, 176);
+            this.cmdSalirVentas.Location = new System.Drawing.Point(21, 217);
+            this.cmdSalirVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdSalirVentas.Name = "cmdSalirVentas";
-            this.cmdSalirVentas.Size = new System.Drawing.Size(67, 23);
+            this.cmdSalirVentas.Size = new System.Drawing.Size(89, 28);
             this.cmdSalirVentas.TabIndex = 20;
             this.cmdSalirVentas.Text = "Salir";
             this.cmdSalirVentas.UseVisualStyleBackColor = true;
@@ -56,65 +57,72 @@
             // 
             // cmdRegistroVentas
             // 
-            this.cmdRegistroVentas.Location = new System.Drawing.Point(101, 176);
+            this.cmdRegistroVentas.Location = new System.Drawing.Point(135, 217);
+            this.cmdRegistroVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdRegistroVentas.Name = "cmdRegistroVentas";
-            this.cmdRegistroVentas.Size = new System.Drawing.Size(67, 23);
-            this.cmdRegistroVentas.TabIndex = 19;
+            this.cmdRegistroVentas.Size = new System.Drawing.Size(89, 28);
+            this.cmdRegistroVentas.TabIndex = 7;
             this.cmdRegistroVentas.Text = "Registrar";
             this.cmdRegistroVentas.UseVisualStyleBackColor = true;
             this.cmdRegistroVentas.Click += new System.EventHandler(this.cmdRegistroVentas_Click);
             // 
             // mskMontoVentas
             // 
-            this.mskMontoVentas.Location = new System.Drawing.Point(76, 61);
+            this.mskMontoVentas.Location = new System.Drawing.Point(101, 75);
+            this.mskMontoVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mskMontoVentas.Mask = "999999999";
             this.mskMontoVentas.Name = "mskMontoVentas";
-            this.mskMontoVentas.Size = new System.Drawing.Size(92, 20);
-            this.mskMontoVentas.TabIndex = 16;
+            this.mskMontoVentas.Size = new System.Drawing.Size(121, 22);
+            this.mskMontoVentas.TabIndex = 3;
             this.mskMontoVentas.ValidatingType = typeof(int);
             // 
             // mskFecha
             // 
-            this.mskFecha.Location = new System.Drawing.Point(100, 141);
+            this.mskFecha.Location = new System.Drawing.Point(133, 174);
+            this.mskFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mskFecha.Mask = "00/00/0000";
             this.mskFecha.Name = "mskFecha";
-            this.mskFecha.Size = new System.Drawing.Size(68, 20);
-            this.mskFecha.TabIndex = 15;
+            this.mskFecha.Size = new System.Drawing.Size(89, 22);
+            this.mskFecha.TabIndex = 6;
             this.mskFecha.ValidatingType = typeof(System.DateTime);
             // 
             // lblVendedorID
             // 
             this.lblVendedorID.AutoSize = true;
-            this.lblVendedorID.Location = new System.Drawing.Point(14, 39);
+            this.lblVendedorID.Location = new System.Drawing.Point(19, 48);
+            this.lblVendedorID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVendedorID.Name = "lblVendedorID";
-            this.lblVendedorID.Size = new System.Drawing.Size(56, 13);
+            this.lblVendedorID.Size = new System.Drawing.Size(70, 16);
             this.lblVendedorID.TabIndex = 14;
             this.lblVendedorID.Text = "Vendedor:";
             // 
             // lblClienteID
             // 
             this.lblClienteID.AutoSize = true;
-            this.lblClienteID.Location = new System.Drawing.Point(14, 13);
+            this.lblClienteID.Location = new System.Drawing.Point(19, 16);
+            this.lblClienteID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClienteID.Name = "lblClienteID";
-            this.lblClienteID.Size = new System.Drawing.Size(42, 13);
+            this.lblClienteID.Size = new System.Drawing.Size(51, 16);
             this.lblClienteID.TabIndex = 13;
             this.lblClienteID.Text = "Cliente:";
             // 
             // lblMonto
             // 
             this.lblMonto.AutoSize = true;
-            this.lblMonto.Location = new System.Drawing.Point(14, 66);
+            this.lblMonto.Location = new System.Drawing.Point(19, 81);
+            this.lblMonto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMonto.Name = "lblMonto";
-            this.lblMonto.Size = new System.Drawing.Size(40, 13);
+            this.lblMonto.Size = new System.Drawing.Size(47, 16);
             this.lblMonto.TabIndex = 12;
             this.lblMonto.Text = "Monto:";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(16, 145);
+            this.lblFecha.Location = new System.Drawing.Point(21, 178);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(40, 13);
+            this.lblFecha.Size = new System.Drawing.Size(48, 16);
             this.lblFecha.TabIndex = 11;
             this.lblFecha.Text = "Fecha:";
             // 
@@ -122,37 +130,37 @@
             // 
             this.lstClientesID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstClientesID.FormattingEnabled = true;
-            this.lstClientesID.Location = new System.Drawing.Point(74, 7);
+            this.lstClientesID.Location = new System.Drawing.Point(99, 9);
+            this.lstClientesID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstClientesID.Name = "lstClientesID";
-            this.lstClientesID.Size = new System.Drawing.Size(92, 21);
-            this.lstClientesID.TabIndex = 21;
+            this.lstClientesID.Size = new System.Drawing.Size(121, 24);
+            this.lstClientesID.TabIndex = 1;
             // 
             // lstVendedoresID
             // 
             this.lstVendedoresID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstVendedoresID.FormattingEnabled = true;
-            this.lstVendedoresID.Location = new System.Drawing.Point(76, 35);
+            this.lstVendedoresID.Location = new System.Drawing.Point(101, 43);
+            this.lstVendedoresID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstVendedoresID.Name = "lstVendedoresID";
-            this.lstVendedoresID.Size = new System.Drawing.Size(90, 21);
-            this.lstVendedoresID.TabIndex = 22;
+            this.lstVendedoresID.Size = new System.Drawing.Size(119, 24);
+            this.lstVendedoresID.TabIndex = 2;
             // 
             // lblTipoDeFactura
             // 
             this.lblTipoDeFactura.AutoSize = true;
-            this.lblTipoDeFactura.Location = new System.Drawing.Point(14, 118);
-            this.lblTipoDeFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTipoDeFactura.Location = new System.Drawing.Point(19, 145);
             this.lblTipoDeFactura.Name = "lblTipoDeFactura";
-            this.lblTipoDeFactura.Size = new System.Drawing.Size(82, 13);
+            this.lblTipoDeFactura.Size = new System.Drawing.Size(102, 16);
             this.lblTipoDeFactura.TabIndex = 23;
             this.lblTipoDeFactura.Text = "Tipo de Factura";
             // 
             // lblNumeroFactura
             // 
             this.lblNumeroFactura.AutoSize = true;
-            this.lblNumeroFactura.Location = new System.Drawing.Point(14, 92);
-            this.lblNumeroFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNumeroFactura.Location = new System.Drawing.Point(19, 113);
             this.lblNumeroFactura.Name = "lblNumeroFactura";
-            this.lblNumeroFactura.Size = new System.Drawing.Size(58, 13);
+            this.lblNumeroFactura.Size = new System.Drawing.Size(69, 16);
             this.lblNumeroFactura.TabIndex = 24;
             this.lblNumeroFactura.Text = "N° Factura";
             // 
@@ -164,25 +172,26 @@
             "A",
             "B",
             "C"});
-            this.lstTipoDeFactura.Location = new System.Drawing.Point(100, 115);
-            this.lstTipoDeFactura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstTipoDeFactura.Location = new System.Drawing.Point(133, 142);
+            this.lstTipoDeFactura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstTipoDeFactura.Name = "lstTipoDeFactura";
-            this.lstTipoDeFactura.Size = new System.Drawing.Size(67, 21);
-            this.lstTipoDeFactura.TabIndex = 25;
+            this.lstTipoDeFactura.Size = new System.Drawing.Size(88, 24);
+            this.lstTipoDeFactura.TabIndex = 5;
             // 
             // mskNumeroFactura
             // 
-            this.mskNumeroFactura.Location = new System.Drawing.Point(100, 89);
-            this.mskNumeroFactura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskNumeroFactura.Location = new System.Drawing.Point(133, 110);
+            this.mskNumeroFactura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mskNumeroFactura.Mask = "99999";
             this.mskNumeroFactura.Name = "mskNumeroFactura";
-            this.mskNumeroFactura.Size = new System.Drawing.Size(68, 20);
-            this.mskNumeroFactura.TabIndex = 26;
+            this.mskNumeroFactura.Size = new System.Drawing.Size(89, 22);
+            this.mskNumeroFactura.TabIndex = 4;
             // 
             // frmVentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(188, 214);
+            this.ClientSize = new System.Drawing.Size(251, 263);
             this.Controls.Add(this.mskNumeroFactura);
             this.Controls.Add(this.lstTipoDeFactura);
             this.Controls.Add(this.lblNumeroFactura);
@@ -197,6 +206,7 @@
             this.Controls.Add(this.lblClienteID);
             this.Controls.Add(this.lblMonto);
             this.Controls.Add(this.lblFecha);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventas";

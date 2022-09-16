@@ -36,6 +36,7 @@ namespace PryVelezFunesSP1ER
                     {
                         MessageBox.Show("El ID del vendedor se ha repetido, intentelo nuevamente");
                         mskIdentificacionVendedores.Text = "";
+                        mskIdentificacionVendedores.Focus();
                         bandera = true;
                     }
                 }

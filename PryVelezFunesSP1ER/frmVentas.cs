@@ -44,7 +44,7 @@ namespace PryVelezFunesSP1ER
         private void cmdRegistroVentas_Click(object sender, EventArgs e)
         {
             StreamWriter swCargarVentas = new StreamWriter("./Ventas.txt", true);
-            swCargarVentas.WriteLine(lstClientesID.Text + "," + lstVendedoresID.Text + "," + mskNumeroFactura.Text + "," + lstTipoDeFactura.SelectedItem + "," + mskFecha.Text + "," + mskMontoVentas.Text);
+            swCargarVentas.WriteLine(lstTipoDeFactura.SelectedItem + "," + mskNumeroFactura.Text + "," + mskFecha.Text + "," + lstClientesID.SelectedIndex + "," + lstVendedoresID.SelectedIndex + "," + mskMontoVentas.Text);
             MessageBox.Show("Venta Cargada");
             swCargarVentas.Close();
             lstClientesID.SelectedIndex = -1;
