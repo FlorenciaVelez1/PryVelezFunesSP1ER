@@ -49,7 +49,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(599, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(341, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -97,21 +97,21 @@
             // tpsmConsultaClientes
             // 
             this.tpsmConsultaClientes.Name = "tpsmConsultaClientes";
-            this.tpsmConsultaClientes.Size = new System.Drawing.Size(224, 26);
+            this.tpsmConsultaClientes.Size = new System.Drawing.Size(170, 26);
             this.tpsmConsultaClientes.Text = "Clientes";
             this.tpsmConsultaClientes.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
             // 
             // tpsmConsultaVendedores
             // 
             this.tpsmConsultaVendedores.Name = "tpsmConsultaVendedores";
-            this.tpsmConsultaVendedores.Size = new System.Drawing.Size(224, 26);
+            this.tpsmConsultaVendedores.Size = new System.Drawing.Size(170, 26);
             this.tpsmConsultaVendedores.Text = "Vendedores";
             this.tpsmConsultaVendedores.Click += new System.EventHandler(this.tpsmConsultaVendedores_Click);
             // 
             // tpsmConsultaVentas
             // 
             this.tpsmConsultaVentas.Name = "tpsmConsultaVentas";
-            this.tpsmConsultaVentas.Size = new System.Drawing.Size(224, 26);
+            this.tpsmConsultaVentas.Size = new System.Drawing.Size(170, 26);
             this.tpsmConsultaVentas.Text = "Ventas";
             this.tpsmConsultaVentas.Click += new System.EventHandler(this.tpsmConsultaVentas_Click);
             // 
@@ -119,10 +119,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 241);
+            this.ClientSize = new System.Drawing.Size(341, 241);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";

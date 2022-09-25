@@ -17,7 +17,6 @@ namespace PryVelezFunesSP1ER
         {
             InitializeComponent();
         }
-
         private void cmdLimpiar_Click(object sender, EventArgs e)
         {
             grillaClientes.Rows.Clear();
@@ -31,6 +30,7 @@ namespace PryVelezFunesSP1ER
                 string[] vectorDatosClientes = DatosClientes.Split((','));
                 grillaClientes.Rows.Add(vectorDatosClientes[0], vectorDatosClientes[1]);
             }
+            Clientes.Close();
         }
     }
 }

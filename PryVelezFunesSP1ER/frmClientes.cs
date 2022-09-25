@@ -24,14 +24,16 @@ namespace PryVelezFunesSP1ER
         }
         private void cmdRegistroClientes_Click(object sender, EventArgs e)
         {
+            //Creo un booleano para verificar repeticion de codigo
             bool bandera = false;
             if (File.Exists("./Clientes.txt"))
             {
                 StreamReader srControlClientes = new StreamReader("./Clientes.txt");
-                
                 while (!srControlClientes.EndOfStream)
                 {
                     string auxClientes = srControlClientes.ReadLine();
+                    //Creo vector para agregar los datos del archivo 
+                    //El split quita la , del archivo
                     string[] Clientes = auxClientes.Split(',');
                     if (mskIdentificacionClientes.Text == Clientes[0])
                     {
@@ -44,7 +46,7 @@ namespace PryVelezFunesSP1ER
                 srControlClientes.Close();
             }
             if (bandera == false)
-            {
+            {   
                 StreamWriter swCargaClientes = new StreamWriter("./Clientes.txt", true);
                 swCargaClientes.WriteLine(mskIdentificacionClientes.Text + "," + txtNombreClientes.Text);
                 MessageBox.Show("Cliente cargado correctamente");

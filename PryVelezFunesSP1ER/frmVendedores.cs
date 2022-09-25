@@ -24,6 +24,8 @@ namespace PryVelezFunesSP1ER
         }
         private void cmdRegistroVendedores_Click(object sender, EventArgs e)
         {
+
+
             bool bandera = false;
             if (File.Exists("./Vendedores.txt"))
             {

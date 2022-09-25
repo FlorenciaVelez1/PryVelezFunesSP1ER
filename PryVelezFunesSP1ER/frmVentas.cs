@@ -24,7 +24,7 @@ namespace PryVelezFunesSP1ER
         private void frmVentas_Load(object sender, EventArgs e)
         {
             StreamReader LeerIDVendedor = new StreamReader("./Vendedores.txt");
-
+            //Agrego a la lst los datos anteriormente registrados
             while (!LeerIDVendedor.EndOfStream)
             {
                 string varLeerIDVendedor = LeerIDVendedor.ReadLine();
@@ -33,6 +33,7 @@ namespace PryVelezFunesSP1ER
             }
             LeerIDVendedor.Close();
             StreamReader LeerIDCliente = new StreamReader("./Clientes.txt");
+            //Agrego a la lst los datos anteriormente registrados
             while (!LeerIDCliente.EndOfStream)
             {
                 string varLeerIDCliente = LeerIDCliente.ReadLine();

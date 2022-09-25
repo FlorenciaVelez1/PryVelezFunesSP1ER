@@ -29,6 +29,7 @@ namespace PryVelezFunesSP1ER
                 string[] vectorDatosVendedores = DatosVendedores.Split((','));
                 grillaVendedores.Rows.Add(vectorDatosVendedores[0], vectorDatosVendedores[1], vectorDatosVendedores[2], vectorDatosVendedores[3]);
             }
+            Vendedores.Close();
         }
     }
 }
