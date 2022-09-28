@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaClientes));
             this.grillaClientes = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,12 +43,12 @@
             this.grillaClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.grillaClientes.Location = new System.Drawing.Point(7, 10);
-            this.grillaClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grillaClientes.Location = new System.Drawing.Point(9, 12);
+            this.grillaClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grillaClientes.Name = "grillaClientes";
             this.grillaClientes.RowHeadersWidth = 51;
             this.grillaClientes.RowTemplate.Height = 24;
-            this.grillaClientes.Size = new System.Drawing.Size(279, 122);
+            this.grillaClientes.Size = new System.Drawing.Size(372, 150);
             this.grillaClientes.TabIndex = 0;
             // 
             // Column1
@@ -66,9 +67,10 @@
             // 
             // cmdListar
             // 
-            this.cmdListar.Location = new System.Drawing.Point(211, 143);
+            this.cmdListar.Location = new System.Drawing.Point(281, 176);
+            this.cmdListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(75, 23);
+            this.cmdListar.Size = new System.Drawing.Size(100, 28);
             this.cmdListar.TabIndex = 1;
             this.cmdListar.Text = "Listar";
             this.cmdListar.UseVisualStyleBackColor = true;
@@ -76,9 +78,10 @@
             // 
             // cmdLimpiar
             // 
-            this.cmdLimpiar.Location = new System.Drawing.Point(7, 143);
+            this.cmdLimpiar.Location = new System.Drawing.Point(9, 176);
+            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdLimpiar.Name = "cmdLimpiar";
-            this.cmdLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.cmdLimpiar.Size = new System.Drawing.Size(100, 28);
             this.cmdLimpiar.TabIndex = 2;
             this.cmdLimpiar.Text = "Limpiar";
             this.cmdLimpiar.UseVisualStyleBackColor = true;
@@ -86,13 +89,14 @@
             // 
             // frmConsultaClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 178);
+            this.ClientSize = new System.Drawing.Size(393, 219);
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.grillaClientes);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmConsultaClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Clientes";

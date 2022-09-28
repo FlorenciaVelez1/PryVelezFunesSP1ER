@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentas));
             this.cmdSalirVentas = new System.Windows.Forms.Button();
             this.cmdRegistroVentas = new System.Windows.Forms.Button();
             this.mskMontoVentas = new System.Windows.Forms.MaskedTextBox();
@@ -47,7 +48,7 @@
             // cmdSalirVentas
             // 
             this.cmdSalirVentas.Location = new System.Drawing.Point(21, 217);
-            this.cmdSalirVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdSalirVentas.Margin = new System.Windows.Forms.Padding(4);
             this.cmdSalirVentas.Name = "cmdSalirVentas";
             this.cmdSalirVentas.Size = new System.Drawing.Size(89, 28);
             this.cmdSalirVentas.TabIndex = 20;
@@ -58,7 +59,7 @@
             // cmdRegistroVentas
             // 
             this.cmdRegistroVentas.Location = new System.Drawing.Point(135, 217);
-            this.cmdRegistroVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdRegistroVentas.Margin = new System.Windows.Forms.Padding(4);
             this.cmdRegistroVentas.Name = "cmdRegistroVentas";
             this.cmdRegistroVentas.Size = new System.Drawing.Size(89, 28);
             this.cmdRegistroVentas.TabIndex = 7;
@@ -69,7 +70,7 @@
             // mskMontoVentas
             // 
             this.mskMontoVentas.Location = new System.Drawing.Point(101, 75);
-            this.mskMontoVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskMontoVentas.Margin = new System.Windows.Forms.Padding(4);
             this.mskMontoVentas.Mask = "999999999";
             this.mskMontoVentas.Name = "mskMontoVentas";
             this.mskMontoVentas.Size = new System.Drawing.Size(121, 22);
@@ -79,7 +80,7 @@
             // mskFecha
             // 
             this.mskFecha.Location = new System.Drawing.Point(133, 174);
-            this.mskFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskFecha.Margin = new System.Windows.Forms.Padding(4);
             this.mskFecha.Mask = "00/00/0000";
             this.mskFecha.Name = "mskFecha";
             this.mskFecha.Size = new System.Drawing.Size(89, 22);
@@ -131,7 +132,7 @@
             this.lstClientesID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstClientesID.FormattingEnabled = true;
             this.lstClientesID.Location = new System.Drawing.Point(99, 9);
-            this.lstClientesID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstClientesID.Margin = new System.Windows.Forms.Padding(4);
             this.lstClientesID.Name = "lstClientesID";
             this.lstClientesID.Size = new System.Drawing.Size(121, 24);
             this.lstClientesID.TabIndex = 1;
@@ -141,7 +142,7 @@
             this.lstVendedoresID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstVendedoresID.FormattingEnabled = true;
             this.lstVendedoresID.Location = new System.Drawing.Point(101, 43);
-            this.lstVendedoresID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstVendedoresID.Margin = new System.Windows.Forms.Padding(4);
             this.lstVendedoresID.Name = "lstVendedoresID";
             this.lstVendedoresID.Size = new System.Drawing.Size(119, 24);
             this.lstVendedoresID.TabIndex = 2;
@@ -206,7 +207,8 @@
             this.Controls.Add(this.lblClienteID);
             this.Controls.Add(this.lblMonto);
             this.Controls.Add(this.lblFecha);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventas";

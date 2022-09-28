@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClientes));
             this.cmdSalir = new System.Windows.Forms.Button();
             this.cmdRegistroClientes = new System.Windows.Forms.Button();
             this.txtNombreClientes = new System.Windows.Forms.TextBox();
@@ -109,6 +110,7 @@
             this.Controls.Add(this.mskIdentificacionClientes);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblIdentificacion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

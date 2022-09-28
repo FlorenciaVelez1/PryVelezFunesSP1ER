@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVendedores));
             this.cmdSalir = new System.Windows.Forms.Button();
             this.cmdRegistroVendedores = new System.Windows.Forms.Button();
             this.txtNombreVendedores = new System.Windows.Forms.TextBox();
@@ -45,7 +46,7 @@
             // cmdSalir
             // 
             this.cmdSalir.Location = new System.Drawing.Point(20, 167);
-            this.cmdSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdSalir.Margin = new System.Windows.Forms.Padding(4);
             this.cmdSalir.Name = "cmdSalir";
             this.cmdSalir.Size = new System.Drawing.Size(100, 28);
             this.cmdSalir.TabIndex = 6;
@@ -56,7 +57,7 @@
             // cmdRegistroVendedores
             // 
             this.cmdRegistroVendedores.Location = new System.Drawing.Point(156, 167);
-            this.cmdRegistroVendedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdRegistroVendedores.Margin = new System.Windows.Forms.Padding(4);
             this.cmdRegistroVendedores.Name = "cmdRegistroVendedores";
             this.cmdRegistroVendedores.Size = new System.Drawing.Size(100, 28);
             this.cmdRegistroVendedores.TabIndex = 5;
@@ -67,7 +68,7 @@
             // txtNombreVendedores
             // 
             this.txtNombreVendedores.Location = new System.Drawing.Point(124, 50);
-            this.txtNombreVendedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreVendedores.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreVendedores.Name = "txtNombreVendedores";
             this.txtNombreVendedores.Size = new System.Drawing.Size(132, 22);
             this.txtNombreVendedores.TabIndex = 2;
@@ -76,7 +77,7 @@
             // mskIdentificacionVendedores
             // 
             this.mskIdentificacionVendedores.Location = new System.Drawing.Point(124, 15);
-            this.mskIdentificacionVendedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskIdentificacionVendedores.Margin = new System.Windows.Forms.Padding(4);
             this.mskIdentificacionVendedores.Mask = "99999";
             this.mskIdentificacionVendedores.Name = "mskIdentificacionVendedores";
             this.mskIdentificacionVendedores.Size = new System.Drawing.Size(132, 22);
@@ -154,7 +155,8 @@
             this.Controls.Add(this.mskIdentificacionVendedores);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblIdentificacion);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmVendedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vendedores";

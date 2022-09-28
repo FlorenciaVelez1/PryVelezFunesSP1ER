@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaVendedores));
             this.cmdLimpiar = new System.Windows.Forms.Button();
             this.cmdListar = new System.Windows.Forms.Button();
             this.grillaVendedores = new System.Windows.Forms.DataGridView();
@@ -41,7 +42,7 @@
             // cmdLimpiar
             // 
             this.cmdLimpiar.Location = new System.Drawing.Point(15, 177);
-            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.cmdLimpiar.Name = "cmdLimpiar";
             this.cmdLimpiar.Size = new System.Drawing.Size(100, 28);
             this.cmdLimpiar.TabIndex = 2;
@@ -52,7 +53,7 @@
             // cmdListar
             // 
             this.cmdListar.Location = new System.Drawing.Point(336, 177);
-            this.cmdListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdListar.Margin = new System.Windows.Forms.Padding(4);
             this.cmdListar.Name = "cmdListar";
             this.cmdListar.Size = new System.Drawing.Size(100, 28);
             this.cmdListar.TabIndex = 1;
@@ -112,7 +113,8 @@
             this.Controls.Add(this.cmdLimpiar);
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.grillaVendedores);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmConsultaVendedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Vendedores";
